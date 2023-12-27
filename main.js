@@ -1,11 +1,11 @@
 import * as THREE from 'three';
-import { DRACOLoader } from 'three/examples/jsm/loaders/DRACOLoader';
-import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
-import { ShaderPass } from 'three/examples/jsm/postprocessing/ShaderPass';
-import { EffectComposer } from 'three/examples/jsm/postprocessing/EffectComposer';
-import { RenderPass } from 'three/examples/jsm/postprocessing/RenderPass';
-import { GammaCorrectionShader } from 'three/examples/jsm/shaders/GammaCorrectionShader';
-
+import { DRACOLoader } from './node_modules/three/examples/jsm/loaders/DRACOLoader.js';
+import { GLTFLoader } from './node_modules/three/examples/jsm/loaders/GLTFLoader.js';
+import { ShaderPass } from './node_modules/three/examples/jsm/postprocessing/ShaderPass.jsm';
+import { EffectComposer } from './node_modules/three/examples/jsm/postprocessing/EffectComposer.js';
+import { RenderPass } from './node_modules/three/examples/jsm/postprocessing/RenderPass.js';
+import { GammaCorrectionShader } from './node_modules/three/examples/jsm/shaders/GammaCorrectionShader.js';
+import { ObjectControls } from 'node_modules/threejs-object-controls/ObjectControls.js';
 
 const container = document.getElementById('canvas-container');
 console.log(container.clientWidth, container.clientHeight);
@@ -50,6 +50,7 @@ loader.load('./public/Murex_Romosus.gltf', gltf=> {
 conch.material = material;
 controls = new ObjectControls(camera, renderer.domElement, conch);
 controls.enableVerticalRotation();
+controls.disableZoom();
 scene.add(conch);
 });
 

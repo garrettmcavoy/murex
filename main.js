@@ -1,11 +1,11 @@
 import * as THREE from 'three';
-import { DRACOLoader } from './node_modules/three/examples/jsm/loaders/DRACOLoader.js';
+import { DRACOLoader } from 'https://github.com/garrettmcavoy/murex/blob/main/node_modules/three/examples/jsm/loaders/DRACOLoader.js';
 import { GLTFLoader } from './node_modules/three/examples/jsm/loaders/GLTFLoader.js';
-import { ShaderPass } from './node_modules/three/examples/jsm/postprocessing/ShaderPass.jsm';
+import { ShaderPass } from './node_modules/three/examples/jsm/postprocessing/ShaderPass.js';
 import { EffectComposer } from './node_modules/three/examples/jsm/postprocessing/EffectComposer.js';
 import { RenderPass } from './node_modules/three/examples/jsm/postprocessing/RenderPass.js';
 import { GammaCorrectionShader } from './node_modules/three/examples/jsm/shaders/GammaCorrectionShader.js';
-import { ObjectControls } from 'node_modules/threejs-object-controls/ObjectControls.js';
+import { ObjectControls } from 'https://github.com/garrettmcavoy/murex/blob/main/node_modules/threejs-object-controls/ObjectControls.js';
 
 const container = document.getElementById('canvas-container');
 

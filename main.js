@@ -1,11 +1,11 @@
 import * as THREE from 'three';
-import { ObjectControls } from 'threejs-object-controls';
 import { DRACOLoader } from 'three/examples/jsm/loaders/DRACOLoader';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 import { ShaderPass } from 'three/examples/jsm/postprocessing/ShaderPass';
 import { EffectComposer } from 'three/examples/jsm/postprocessing/EffectComposer';
 import { RenderPass } from 'three/examples/jsm/postprocessing/RenderPass';
 import { GammaCorrectionShader } from 'three/examples/jsm/shaders/GammaCorrectionShader';
+import { ObjectControls } from 'threejs-object-controls';
 
 const container = document.getElementById('canvas-container');
 console.log(container.clientWidth, container.clientHeight);

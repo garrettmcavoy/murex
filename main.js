@@ -5,6 +5,7 @@ import { ShaderPass } from './node_modules/three/examples/jsm/postprocessing/Sha
 import { EffectComposer } from './node_modules/three/examples/jsm/postprocessing/EffectComposer.js';
 import { RenderPass } from './node_modules/three/examples/jsm/postprocessing/RenderPass.js';
 import { GammaCorrectionShader } from './node_modules/three/examples/jsm/shaders/GammaCorrectionShader.js';
+import { ObjectControls } from '/node_modules/threejs-object-controls/ObjectControls.js';
 
 const container = document.getElementById('canvas-container');
 

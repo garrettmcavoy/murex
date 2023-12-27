@@ -50,7 +50,6 @@ loader.load('./public/Murex_Romosus.gltf', gltf=> {
 conch.material = material;
 controls = new ObjectControls(camera, renderer.domElement, conch);
 controls.enableVerticalRotation();
-controls.disableZoom();
 scene.add(conch);
 });
 

@@ -8,7 +8,6 @@ import { GammaCorrectionShader } from './node_modules/three/examples/jsm/shaders
 import { ObjectControls } from 'node_modules/threejs-object-controls/ObjectControls.js';
 
 const container = document.getElementById('canvas-container');
-console.log(container.clientWidth, container.clientHeight);
 
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(75, container.clientWidth / container.clientHeight, 0.1, 1000);

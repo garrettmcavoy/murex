@@ -3787,4 +3787,4 @@ void main() {
                 gl_FragColor = vec4(.1, .9, .86, 1.0);
             }
 
-		}`},M_=new Ks(p_),S_=new Ks(Jr),y_=new Ks(v_);ts.addPass(x_);ts.addPass(S_);ts.addPass(y_);ts.addPass(M_);function cl(){requestAnimationFrame(cl),qi&&(qi.isUserInteractionActive()||(mi.rotation.x+=0,mi.rotation.y+=0),ts.render())}cl();function E_(){ln=Ki.clientHeight,Wt=Ki.clientHeight,console.log(Wt),Zi.aspect=ln/Wt,Zi.updateProjectionMatrix(),Ln.setSize(ln,Wt),Jr.uniforms.resolution.value.set(ln,Wt),Jr.uniforms.aspectRatio.value=ln/Wt}window.addEventListener("resize",E_);
+		}`},M_=new Ks(p_),S_=new Ks(Jr),y_=new Ks(v_);ts.addPass(x_);ts.addPass(S_);ts.addPass(y_);ts.addPass(M_);function cl(){requestAnimationFrame(cl),qi&&(qi.isUserInteractionActive()||(mi.rotation.x+=.015,mi.rotation.y+=0),ts.render())}cl();function E_(){ln=Ki.clientHeight,Wt=Ki.clientHeight,console.log(Wt),Zi.aspect=ln/Wt,Zi.updateProjectionMatrix(),Ln.setSize(ln,Wt),Jr.uniforms.resolution.value.set(ln,Wt),Jr.uniforms.aspectRatio.value=ln/Wt}window.addEventListener("resize",E_);
